@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="atvidade.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <div class="esquerda">
+            <h2>Bem-vindo!</h2>
+            <p>
+                Preencha o formulário ao lado para realizar seu cadastro.
+                Nosso sistema é rápido, seguro e fácil de usar.
+            </p>
+        </div>
+        <div class="direita">
+            <form method="post" name="cadastro">
+                <div class="linha">
+                    <div class="grupo" style="flex: 1;">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome"/>
+                    </div>
+
+                    <div class="grupo" style="flex: 1;">
+                        <label>Sobrenome</label>
+                        <input type="text" placeholder="Seu sobrenome"/>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <label>Email</label>
+                    <input type="email" placeholder="Digite seu email"/>
+                </div>
+                <div class="linha">
+                <div class="grupo">
+                    <label>Senha</label>
+                    <input type="password" placeholder="Crie uma senha"/>
+                </div>
+                <div class="grupo">
+                    <label>Perfil</label>
+                    <select>
+                        <option>Selecione</option>
+                        <option value="aluno">Aluno</option>
+                        <option value="professor">Professor</option>
+                        <option value="servidor">Administrador</option>
+                    </select>
+                </div>
+                </div>
+                <button type="submit">Cadastrar</button>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
