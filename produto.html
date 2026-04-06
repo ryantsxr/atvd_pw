@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function produto(){
+            
+        let nome = 0;
+        let valor = 0;
+        let total  = 0;
+        let desconto = 0;
+
+            for(let i = 0; i < 3; i++){
+                nome = prompt("Digite o nome do produto: ");
+                valor = parseFloat(prompt("Digite o valor do produto: "));
+
+                total += valor;
+            }
+            alert("Total: " + total);
+            
+            if(total > 100){
+                desconto = total * 0.1;
+                total -= desconto;
+                alert("Total com desconto 10%: " + total);
+            } else{
+                desconto = total * 0.05;
+                total -= desconto;
+                alert("Total com desconto 5%: " + total);
+            }
+        }
+        
+        produto();
+    </script>
+</body>
+</html>

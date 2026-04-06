@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let candidatoA = 0;
+        let candidatoB = 0;
+        let brancos = 0;
+
+        for(let i = 0; i < 5; i++){
+            let voto = prompt("Digite o número do candidato (1 para A, 2 para B, 3 para branco):");
+
+            if(voto === "1"){
+                candidatoA++;
+            } else if(voto === "2"){
+                candidatoB++;
+            } else if(voto === "3"){
+                brancos++;
+            } else {
+                alert("Voto inválido. Por favor, digite 1, 2 ou 3.");
+            }
+        }
+        alert("Votos para o candidato A: " + candidatoA + "\nVotos para o candidato B: " + candidatoB + "\nVotos em branco: " + brancos);
+    </script>
+</body>
+</html>
